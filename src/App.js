@@ -1,24 +1,21 @@
 import React, {Component} from 'react'
-import './Styles.css'
+import Student from './Student'
+import College from './College'
 
 class App extends Component{
-
-state ={
-  Count:0
-}
-handleinc = () =>{
-  this.setState({Count:this.state.Count+1})
-}
-
-
+  state = {
+    name:'Madhu'
+  }
+  handleName =()=>{
+    this.setState({name:'MadhuSudhanan KL'})
+  }
   render(){
     return(
       <div>
-        <h1>
-          Hello
-        </h1>
-        <h2>Count: {this.state.Count}</h2>
-        <button onClick={this.handleinc} className='buttoninc'>Increment</button>
+        <h1>App</h1>
+        <Student name={this.state.name}/>
+        <College name={this.state.name}/>
+        <button onClick={this.handleName}> Change Name</button>
       </div>
     )
   }
