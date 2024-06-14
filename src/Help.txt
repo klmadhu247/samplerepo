@@ -1,5 +1,0 @@
-State:
-Storing things with in the component
-
-Props:
-Passing value from one component to another component
