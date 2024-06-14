@@ -17,7 +17,7 @@ class App extends Component{
         <College name={this.state.name}/>
         <button onClick={this.handleName}> Change Name</button>
       </div>
-    )
+    ) 
   }
 }
 export default App
