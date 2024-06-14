@@ -1,23 +1,21 @@
 import React, {Component} from 'react'
-import Student from './Student'
-import College from './College'
+import Namee from './Namee'
+import AsgnStudent from './AsgnStudent'
+import AsgnCount from './AsgnCount'
 
 class App extends Component{
-  state = {
-    name:'Madhu'
-  }
-  handleName =()=>{
-    this.setState({name:'MadhuSudhanan KL'})
-  }
   render(){
     return(
-      <div>
-        <h1>App</h1>
-        <Student name={this.state.name}/>
-        <College name={this.state.name}/>
-        <button onClick={this.handleName}> Change Name</button>
+      <div>Assignments
+        <Namee/>
+        <br/>
+        <AsgnStudent/>
+        <br/>
+        <br/>
+        <AsgnCount/>
+
       </div>
-    ) 
+    )
   }
 }
 export default App
