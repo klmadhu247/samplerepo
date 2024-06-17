@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import Banner from'./Banner'
-import Film from './Film'
+import StudentForm from './StudentForm'
+import CollegeStudentForm from './CollegeStudentForm'
 
 //all  opening tag should have a closed tag in React
 
@@ -9,7 +10,8 @@ class  App extends Component {
 
   state = {
     Count:0,
-    title:"IceCreamCount"
+    title:"IceCreamCount",
+    flag:true
   }
   handleInc =()=>
     {
@@ -19,22 +21,41 @@ class  App extends Component {
       {
         this.setState({Count:this.state.Count-1})
       }
+      handleToggle= ()=>{
+        this.setState({flag:!this.state.flag})
+
+      }
   
   render() 
   {
   return (
-    <div >
-   <Banner  Title = {this.state.title}  Count={this.state.Count} handleIncrement={this.handleInc}
+   <div >
+    {/* <StudentForm/> */}
+    <CollegeStudentForm/>
+
+
+
+
+
+
+
+
+
+    
+       {/* {
+        this.state.flag && <p>Hello</p>
+ 
+      }
+      <button onClick={this.handleToggle}>Toggle</button> */}
+   
+   
+   {/* <Banner  Title = {this.state.title}  Count={this.state.Count} handleIncrement={this.handleInc}
     handleDecrement={this.handlDec}
    
    />
 
       <br></br>
-      <button onClick={this.handleInc}>Increment</button>
-      <br></br>
-      <Film Name='Beast'/>
-      <Film Name='Valimai'/>
-
+      <button onClick={this.handleInc}>Increment</button> */}
 
 
       
