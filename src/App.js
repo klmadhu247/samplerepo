@@ -4,6 +4,11 @@ import Map from './Map'
 import Veg from './Vegetables'
 import Json from './Json'
 import Review from './Review'
+import Voting from './Voting'
+
+
+
+
 
 
 class App extends Component{
@@ -11,13 +16,12 @@ class App extends Component{
   render(){
     return(
       
-      <div>
-
- 
-        <Review/>
-       
-   
+      <div> 
+        <Voting/>
+        
       
+
+
       </div>
     )
   }
