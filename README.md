@@ -1,1 +1,0 @@
-Sending Methods as props , Example for usage of props, Conditional Rendering,Form handling,Getting input from the user and showing all the details once user press the submit button, Common on change function for all the form fields
