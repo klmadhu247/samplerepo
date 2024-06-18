@@ -26,22 +26,13 @@ class Form extends Component{
         }
         handleSubmit = ()=>
         {
-            if(!this.state.firstName)
-                {
+            
                     alert('FIrst Name is Mandate')
-                }
-                else{
-            if((this.state.pword) &&  this.state.pword === this.state.cpword){
-                this.setState({submit:true})
-
-            }
-            else{
-                alert('Enter a Password that matches both Password & Confirm Password')
-            }
+                
         }
             
 
-        }
+        
 
 
     render(){
@@ -99,13 +90,7 @@ class Form extends Component{
                    <br/> 
                    <button onClick={this.handleSubmit} class="btn btn-primary">Submit</button>
                    <br/>
-                   <label>Enter Password</label>
-
-                   <input type='password' name='pword' placeholder='Enter your Password' value={this.state.pword} onChange={this.handleChange}/> <br/>
-                   <label>Confirm Password</label>
-                   <input type='password'  name='cpword' placeholder='Confirm Password' value={this.state.cpword} onChange={this.handleChange}/> <br/>
-
-
+                   
 
 
                    <p>Lorem <a href="https://www.google.com/" target="_blank">  Google poga venduma</a>  cipsum, dolor sit amet consectetur adipisicing elit. Minus dolore veniam dolorem doloribus nobis consequuntur, ducimus voluptates nesciunt exercitationem minima?</p>
