@@ -1,0 +1,2 @@
+Explaining about validation in Forms
+Explaining about how to check password and confirm password is same and how to make a field mandatory, Rendering list of numbers,String and json using map function. Setting key for the  childrens and conditional rendering within the map function. Explained the reviews project as the sample
