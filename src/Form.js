@@ -14,7 +14,9 @@ class Form extends Component{
         dept:'',
         agreement:false,
         date:'',
-        submit:false
+        submit:false,
+        pword:'',
+        cpword:''
 
     }
     handleChange =(e)=>
@@ -24,7 +26,20 @@ class Form extends Component{
         }
         handleSubmit = ()=>
         {
-            this.setState({submit:true})
+            if(!this.state.firstName)
+                {
+                    alert('FIrst Name is Mandate')
+                }
+                else{
+            if((this.state.pword) &&  this.state.pword === this.state.cpword){
+                this.setState({submit:true})
+
+            }
+            else{
+                alert('Enter a Password that matches both Password & Confirm Password')
+            }
+        }
+            
 
         }
 
@@ -81,9 +96,18 @@ class Form extends Component{
 
                     <input type='checkbox' name='agreement' value={this.state.agreement} onChange={this.handleChange}/>
 
-                   <br/> {this.state.gender}
-                   
+                   <br/> 
                    <button onClick={this.handleSubmit} class="btn btn-primary">Submit</button>
+                   <br/>
+                   <label>Enter Password</label>
+
+                   <input type='password' name='pword' placeholder='Enter your Password' value={this.state.pword} onChange={this.handleChange}/> <br/>
+                   <label>Confirm Password</label>
+                   <input type='password'  name='cpword' placeholder='Confirm Password' value={this.state.cpword} onChange={this.handleChange}/> <br/>
+
+
+
+
                    <p>Lorem <a href="https://www.google.com/" target="_blank">  Google poga venduma</a>  cipsum, dolor sit amet consectetur adipisicing elit. Minus dolore veniam dolorem doloribus nobis consequuntur, ducimus voluptates nesciunt exercitationem minima?</p>
 
                    </div>)}
@@ -104,6 +128,9 @@ class Form extends Component{
                     <div>YOur Hobbies are: {this.state.dancing && 'dancing'} {this.state.painting && 'painting'} {this.state.singing && 'singing'}</div>
                     </div>
                     )}
+
+                    {this.state.pword}
+                    {this.state.cpword}
 
                     </div>  </div>
            
