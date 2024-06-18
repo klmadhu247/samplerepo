@@ -27,16 +27,10 @@ handleC =()=>
 
     render(){
         return(
-            <div>
-                <h1>Language</h1>
-                <table className='tablest'>
-                    <thead>
-                        <tr>
-                            <th>Language</th> <br/>
-                            <th>COunt</th>
-                            <th>Cast Your Vote</th>
-                        </tr>
-                    </thead>
+            <div className='tablepage'>
+                
+                <table className='tablestyl'>
+                    
                     <tbody>
                         <tr>
                             <td >C</td>
