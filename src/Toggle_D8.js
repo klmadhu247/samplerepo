@@ -44,7 +44,7 @@ handleChange =(e)=>
 
 render(){
     return(
-        <div className='container-flex'>
+        <div className='form'>
            {!this.state.onSubmit && <div>
             <label className='col sm-2 col-form-label' >First Name </label>
             <input type='text' name='fname' value={this.state.fname} onChange={this.handleChange}  style={{width:'250px'}} placeholder="Enter First Name" className='col sm-4'/> <br/>
