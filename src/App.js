@@ -1,10 +1,6 @@
 import React, {Component} from 'react'
-import Form from './Form'
-import Map from './Map'
-import Veg from './Vegetables'
-import Json from './Json'
-import Review from './Review'
-import Voting from './Voting'
+import Flex from './Flex'
+import Bootstrap from './Bootstrap'
 
 
 
@@ -16,12 +12,8 @@ class App extends Component{
   render(){
     return(
       
-      <div> 
-        <Voting/>
-        
-      
-
-
+      <div>
+        <Bootstrap/>
       </div>
     )
   }

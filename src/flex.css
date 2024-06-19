@@ -1,0 +1,9 @@
+.container-flex
+{
+    display: flex;
+    flex-direction: row; /*default direction is also row*/
+    align-items: center; /* to make the column data center
+    justify-content:center; /*to make the row data center*/
+    flex-wrap: wrap; /* if the page goes beyond the screen we can use this to wrap the text field*/
+
+}
