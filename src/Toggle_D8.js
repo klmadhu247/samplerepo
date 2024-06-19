@@ -6,7 +6,7 @@ class Toggle extends Component
 state={
     fname :'',
     lname:'',
-    age:0,
+    age:'',
     onSubmit:false,
     onShowAge:false,
     onHideAge:false,
@@ -51,7 +51,7 @@ render(){
             <label  >Last Name</label>
             <input type='text' name='lname' value={this.state.lname} onChange={this.handleChange}  style={{width:'250px'}} placeholder="Enter Last Name"/> <br/>
             <label >Age</label>
-            <input type='number' name='age' value={this.state.age} onChange={this.handleChange}  style={{width:'80px'}} placeholder="Enter Age"/> <br/>
+            <input type='number' name='age' value={this.state.age} onChange={this.handleChange} style={{width:'100px'}}   placeholder="Enter Age" /* style={{display: 'flex',justifyContent:'flex-end'}} class="form-control" */ /> <br/>
 
             <button onClick={this.handleSubmit} class="btn btn-primary">Submit</button> <button onClick={this.handleRest} class="btn btn-warning">Reset</button>
 

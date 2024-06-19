@@ -2,7 +2,7 @@
     display:flex;
    margin-top: 100px;
   justify-content: center;
-    background-color: aliceblue;
+    background-color: rgb(152, 197, 237);
     align-content: center;
     
     width: 400px;
@@ -13,4 +13,7 @@
 
     
 }
+.ageinput {
+    margin-right: 10px; 
+  }
 
