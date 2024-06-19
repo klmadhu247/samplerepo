@@ -1,10 +1,6 @@
 import React, {Component} from 'react'
-
-import Toggle from './Toggle_D8'
-
-
-
-
+import Increment from './Increment'
+import Json from './Json_11'
 
 
 class App extends Component{
@@ -13,7 +9,8 @@ class App extends Component{
     return(
       
       <div>
-       <Toggle/>
+       <Increment/>
+       <Json/>
       </div>
     )
   }
