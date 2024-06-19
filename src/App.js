@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Flex from './Flex'
-import Bootstrap from './Bootstrap'
+
+import DayTen from './DayTen'
 
 
 
@@ -13,7 +13,7 @@ class App extends Component{
     return(
       
       <div>
-        <Bootstrap/>
+       <DayTen/>
       </div>
     )
   }
