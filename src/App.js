@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import DayTen from './DayTen'
+import Toggle from './Toggle_D8'
 
 
 
@@ -13,7 +13,7 @@ class App extends Component{
     return(
       
       <div>
-       <DayTen/>
+       <Toggle/>
       </div>
     )
   }
