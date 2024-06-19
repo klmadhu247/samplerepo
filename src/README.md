@@ -1,5 +1,1 @@
-Voting Using Spread Expression (...this.state)
-Component reusage ,
-Flex box and layout concepts in bootstrap
-
-************FLEX : in RT we mostly use align-items:, justify-content:,flex-wrap
+Explaining about rendering the json using map function and showing conditional rendering within the map function
