@@ -1,6 +1,11 @@
 import React, {Component} from 'react'
 
-import Toggle from './Toggle_D8'
+import Age from './Age'
+import Counter from './CounterUsing_Function'
+import NameChange from './NameChange'
+import ToggleAge from './ToggleAge'
+import ToggelButton from './Show_Hide_button'
+
 
 
 
@@ -13,7 +18,12 @@ class App extends Component{
     return(
       
       <div>
-       <Toggle/>
+     
+       <Counter/>
+       <NameChange/>
+       <ToggleAge/>
+       <br/>
+       <ToggelButton/>
       </div>
     )
   }
