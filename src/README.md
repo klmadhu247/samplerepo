@@ -1,1 +1,3 @@
-Adding Icons in a component using 'react-icons' package,changing size and color of icon, adding image through url and by saving it in the project, changing the size of images,
+Explaining about gofull pdf extension and capturing full webpage as pdf 
+Different ways of centering element, image and block, using filter() function in a component,
+Explaining about making categories as tabs and rendering specific data on tab click
