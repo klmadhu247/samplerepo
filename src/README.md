@@ -1,3 +1,1 @@
-Explaining about creating functional component and what are the difference between class and functional component,
-useState hook in functional component, accessing state in component,map function to render, 
-conditional rendering within fucntional component  i.e Show data while pressing a button 
+Adding Icons in a component using 'react-icoms' package,changing size and color of icon, adding image through url and by saving it in the project, changing the size of images,
