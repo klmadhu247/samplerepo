@@ -1,1 +1,1 @@
-Adding Icons in a component using 'react-icoms' package,changing size and color of icon, adding image through url and by saving it in the project, changing the size of images,
+Adding Icons in a component using 'react-icons' package,changing size and color of icon, adding image through url and by saving it in the project, changing the size of images,
