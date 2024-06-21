@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './ReFilter.css'
 
 function ReFilter (){
 
@@ -65,17 +66,46 @@ function ReFilter (){
 const [DeptList,setDepList] = useState(datas.map(data=>data.dept))
 
 //NOw we have to remove the duplicates in DeptList by usig the set method
-const DIistinctDept = [... new Set(DeptList)]
-// our Requirement is to get the list like   All IT   ITI  MS MMA butwe have no All in
+const DistinctDept = [... new Set(DeptList)]
+// our Requirement is to get the list like   All IT   ITI  MS MMA but we have no All in the Dept List so we have to push that in the list
+//to push the element at the begining of the array list we have to use unSwift so as shown below
+DistinctDept.unshift('ALL');
+
+//To show the filtered data we have to create another state component like RenderedData
+const[DataCopy,setDataCopy] = useState(datas)
+
+
+const handleClick =(d)=>
+    {
+        if(d==="ALL")
+            {
+                setDataCopy(datas)
+                return
+            }
+
+
+
+        const FilteredData = datas.filter(datac=>datac.dept===d)
+        setDataCopy(FilteredData)
+
+    }
+
 
 
 
 
     return (
-        <div>
-            <h1>Recreated Filter</h1>
+        <div className="Container_Filter">
+            <h1 className="heading">Recreated Filter</h1> <br/>
 
-  {datas.map(data=> <div>{data.name}   {data.dept}</div>)}
+            <div className="tabContainer">{DistinctDept.map(d=><span className="tabs" onClick={()=>handleClick(d)}>{d}</span>)}</div>
+
+
+
+  {DataCopy.map((data,id)=> <div key={id}>{data.name}   {data.dept}</div>)}
+
+  
+  
   
 
 

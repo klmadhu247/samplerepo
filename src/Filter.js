@@ -86,7 +86,7 @@ function Filter (){
 
 
     return(
-        <div className="Container-filter">
+        <div className="Container_filter">
             <div className="tabContainer">{UniqueDept.map(d=><span className="tab" onClick={()=>handleClick(d)}>{d}</span>)}</div>
 
 
