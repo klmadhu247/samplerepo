@@ -1,4 +1,13 @@
-Explaining about useFunction fucntion and fetching data from API end point using fetch function, saving data to the state and rendering the retrieved data 
+Continuation for the previous 
+
+Explaining  how to use filter function to remove particular element from json after clicking delete button  
+How to fetch data on a button click, explaining abot assignment tour
+
+
+**********************************************
+
+
+
 
 To Fetch Json form the internet or server we have to use two hooks namely
 useState  & useEffect
