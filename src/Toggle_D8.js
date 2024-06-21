@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './Toggle.css'
+import { IoIosHome } from "react-icons/io";
 class Toggle extends Component
 {
 
@@ -81,8 +82,8 @@ render(){
           { !this.state.onHome &&this.state.onShowAge &&<div>
            <h4>Name: {this.state.fname} {this.state.lname}</h4>
            {!this.state.onHideAge && <h5>Age: {this.state.age}</h5>}
-           <button onClick={this.handleHideAge} class="btn btn-danger">Hide Age</button>
-           <button onClick={this.handleHome}>Home</button>
+           <button onClick={this.handleHideAge} class="btn btn-danger">Hide Age</button> <br/>
+           <button onClick={this.handleHome} class="btn btn-primary"> <IoIosHome />Home</button>
             
            </div> }
 
