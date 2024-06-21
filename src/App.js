@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import ReFilter from './FilterReCreation'
+import FetchJson from './Fetch_Json'
+
 function App (){
   return(
     <div>
-    <ReFilter/>
+    <FetchJson/>
 
     </div>
   )
