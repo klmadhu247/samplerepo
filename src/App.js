@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Flex from './Flex'
 import Bootstrap from './Bootstrap'
 
 
