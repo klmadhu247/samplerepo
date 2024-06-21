@@ -1,14 +1,11 @@
 import React, {useState} from 'react'
 
-import NextPrev from './NextPrev'
+import FetchAsynAwait from './FetchAsyncAwait'
 
 function App (){
-
- 
-
   return(
     <div>
-   <NextPrev/>
+    <FetchAsynAwait/>
 
     </div>
   )

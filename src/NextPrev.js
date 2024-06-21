@@ -53,6 +53,17 @@ function NextPrev (){
                 
             }
 
+            const handleRandom =()=>
+                {
+                    let randomValue = Math.floor(Math.random() * users.length);
+                    setIndex(randomValue)
+                    
+                    if(randomValue===index)
+                        {
+                            randomValue=((randomValue+1)> (users.length-1))? 0:randomValue+1
+                        }
+                }
+
 
 
 
@@ -63,6 +74,8 @@ function NextPrev (){
 
             <button onClick={handlePrev}>Prev</button>
             <button onClick={handleNext}>Next</button>
+            <br/>
+            <button onClick={handleRandom}>Random</button>
 
         </div>
     )
