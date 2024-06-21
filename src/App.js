@@ -1,10 +1,14 @@
 import React, {useState} from 'react'
-import FetchJson from './Fetch_Json'
+
+import NextPrev from './NextPrev'
 
 function App (){
+
+ 
+
   return(
     <div>
-    <FetchJson/>
+   <NextPrev/>
 
     </div>
   )
