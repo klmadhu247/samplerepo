@@ -10,7 +10,8 @@ state={
     onSubmit:false,
     onShowAge:false,
     onHideAge:false,
-    onRest:false
+    onRest:false,
+    onHome:false
     
 }
 
@@ -40,12 +41,23 @@ handleChange =(e)=>
             handleHideAge =()=>
                 {
                     this.setState({onHideAge:true})
+                    
                 }
+
+                handleHome =()=>
+                    {
+                        this.setState({onSubmit:false})
+                        this.setState({onHome:true})
+                        this.setState({fname:''})
+                        this.setState({lname:''})
+                        this.setState({age:''})
+                        
+                    }
 
 render(){
     return(
         <div className='form'>
-           {!this.state.onSubmit && <div>
+           {!this.state.onSubmit  && <div>
             <label className='col sm-2 col-form-label' >First Name </label>
             <input type='text' name='fname' value={this.state.fname} onChange={this.handleChange}  style={{width:'250px'}} placeholder="Enter First Name" className='col sm-4'/> <br/>
             <label  >Last Name</label>
@@ -66,10 +78,11 @@ render(){
 
            </div> }
 
-          { this.state.onShowAge &&<div>
+          { !this.state.onHome &&this.state.onShowAge &&<div>
            <h4>Name: {this.state.fname} {this.state.lname}</h4>
            {!this.state.onHideAge && <h5>Age: {this.state.age}</h5>}
            <button onClick={this.handleHideAge} class="btn btn-danger">Hide Age</button>
+           <button onClick={this.handleHome}>Home</button>
             
            </div> }
 
