@@ -74,7 +74,7 @@ DistinctDept.unshift('ALL');
 //To show the filtered data we have to create another state component like RenderedData
 const[DataCopy,setDataCopy] = useState(datas)
 
-
+//To Filter data based on click and to save it within render data here it is called DataCopy
 const handleClick =(d)=>
     {
         if(d==="ALL")
@@ -85,7 +85,7 @@ const handleClick =(d)=>
 
 
 
-        const FilteredData = datas.filter(datac=>datac.dept===d)
+        const FilteredData = datas.filter(datacp=>datacp.dept===d)
         setDataCopy(FilteredData)
 
     }
