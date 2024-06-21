@@ -1,0 +1,24 @@
+/* RegistrationForm.css */
+
+.registration-form {
+    margin-top: 5rem; /* Add some top margin */
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem; /* Adjust margin between form groups */
+  }
+  
+  .form-control {
+    border-radius: 0.25rem; /* Add some border radius for a softer look */
+  }
+  
+  /* Optional styles for specific elements */
+  
+  .form-label {
+    font-weight: bold; /* Make labels stand out */
+  }
+  
+  .form-check-label {
+    font-size: 0.875rem; /* Adjust checkbox label size */
+  }
+  
