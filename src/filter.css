@@ -1,0 +1,21 @@
+.Container_filter
+{
+    
+    width: 400px;
+}
+
+.tab{
+    
+    
+    padding: 10px;
+    
+    border: 2px solid rgb(134, 134, 238);
+    Cursor : pointer;
+    width: 400px;
+}
+.tabContainer
+{
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}

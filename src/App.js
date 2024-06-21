@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import Center from './Center'
+import ReFilter from './FilterReCreation'
 function App (){
   return(
     <div>
-      <Center/>
+    <ReFilter/>
 
     </div>
   )
