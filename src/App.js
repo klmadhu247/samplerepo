@@ -5,6 +5,7 @@ import Voting from './Voting'
 import Counters from './Count_Inc_Dec'
 import Counter_2 from './Counter_2'
 import Form_Password from './Form_PW_D8'
+import Welcome_Change from './Welcom_CR'
 
 
 
@@ -22,9 +23,11 @@ class App extends Component{
        <Counters/>
        <b/>
        <div>Counter_2</div>
-       <Counter_2/> */}
+       <Counter_2/>
 
-       <Form_Password/>
+       <Form_Password/> */}
+
+       <Welcome_Change/>
 
        
       </div>

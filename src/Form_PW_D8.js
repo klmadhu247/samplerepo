@@ -12,6 +12,7 @@ class Form_Password extends Component{
         mail:'',
         pword:'',
         cpword:'',
+        gender:'',
         onCheck:false,
         onSubmit:false,
         onReset:false
@@ -55,6 +56,13 @@ class Form_Password extends Component{
     <div class="col-md-4"><label  class="form-label">Last Name</label>
     <input type="text" name="lname" value={this.state.lname} onChange={this.handleChange} class="form-control" ></input> </div>
     </div>
+    <label class="form-label"> Gender</label>: 
+    <input type="radio" name="gender" value='Male' onChange={this.handleChange}  />
+    <label>Male</label>
+    <input type="radio" name="gender" value='Female' onChange={this.handleChange}/>
+    <label>Female</label>
+    <input type="radio" name="gender" value='Others' onChange={this.handleChange}/>
+    <label>Others</label> <br/>
     <label class="form-label"> Date of Birth</label>
     <input type="date" name="dob" value={this.state.dob} onChange={this.handleChange} class="col-md-2" />
     <label class="form-label"> Email</label>
@@ -74,6 +82,7 @@ class Form_Password extends Component{
 
                     { this.state.onSubmit && <div>  Title: {this.state.title}
                <span> First Name: {this.state.fname}</span>  Last Name: {this.state.lname} <br></br>
+               Gender:{this.state.gender}
                 Date of Birth: {this.state.dob}    Email: {this.state.mail} </div> }
                 </form>
 
