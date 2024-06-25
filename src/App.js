@@ -6,6 +6,8 @@ import Counters from './Count_Inc_Dec'
 import Counter_2 from './Counter_2'
 import Form_Password from './Form_PW_D8'
 import Welcome_Change from './Welcom_CR'
+import Welcome_HW from './welcome'
+import Frm from './frm'
 
 
 
@@ -27,7 +29,14 @@ class App extends Component{
 
        <Form_Password/> */}
 
-       <Welcome_Change/>
+       {/* <Welcome_HW/>
+       <Form_Password/> */}
+
+       <Frm/>
+
+       
+
+
 
        
       </div>
