@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 
-import FetchAsynAwait from './FetchAsyncAwait'
+import Todo from './Todo'
 
 function App (){
   return(
     <div>
-    <FetchAsynAwait/>
+    <Todo/>
 
     </div>
   )
