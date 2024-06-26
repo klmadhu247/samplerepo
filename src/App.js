@@ -1,9 +1,5 @@
 import React, {Component} from 'react'
-
-
-import Frm from './frm'
-import Travel from './Travel'
-
+import Tours from './Tours'
 
 
 
@@ -20,8 +16,9 @@ class App extends Component{
       
        {/*<Frm/>  <Travel/>  */}
 
-       <Travel/>
+       {/* <Travel/> */}
        
+       <Tours/>
 
        
 
