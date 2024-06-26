@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import thnk from './assets/thnk.png'
 
 class Frm extends Component{
 
@@ -118,7 +119,7 @@ handleChange =(e)=>
                    <p> Name: {this.state.title} .  {this.state.fname} {this.state.lname} </p>
                     <p> Email: {this.state.email} </p>
                     <p> DOB:  {this.state.dob} </p>
-                    Thank you for Registering with us 
+                    <img src={thnk}/> for Registering with us 
 
                 </div>
 
