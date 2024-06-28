@@ -7,7 +7,7 @@ class Register extends Component
         return (
             <div className="Register__Container mb-5">
 
-                <h3 className="h3 mt-4">Register New Account</h3>
+                <h3 className="h3 mt-4 ml-2">Register New Account</h3>
 
                 <form>
                     <div className="row py-2">
@@ -38,7 +38,11 @@ class Register extends Component
                             <input type="text" className="form-control" placeholder="Email"/>
                         </div>
                         
-                        <button className="btn btn-success mt-4 col-4 d-flex  ">Create Account</button>
+                        
+
+                        <div>
+                            <button className="bb"> Create Account</button>
+                        </div>
 
                         
                     </div>
