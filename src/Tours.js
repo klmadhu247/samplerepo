@@ -91,7 +91,7 @@ function Tours() {
             No Tours left
 
         </h2>
-        <button className="btn btn-success" onClick={handleRefresh}>Refresh</button>
+        <button className="btn btn-success col-sm-2" onClick={handleRefresh}>Refresh</button>
 
     </div> }
 
