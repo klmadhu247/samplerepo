@@ -4,6 +4,7 @@ import Review from './Review'
 import Birthday from './Birthday'
 import Form1 from './Form1'
 import Register from './Register'
+import WelcomeForm from './welcomeForm'
 
 
 
@@ -32,7 +33,9 @@ class App extends Component{
 
        {/* <Form1/> */}
 
-       <Register/>
+       {/* <Register/> */}
+
+       <WelcomeForm/>
        
 
        
