@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import Tours from './Tours'
+import Review from './Review'
+import Birthday from './Birthday'
+import Form1 from './Form1'
 
 
 
@@ -18,7 +21,16 @@ class App extends Component{
 
        {/* <Travel/> */}
        
-       <Tours/>
+       {/* <Tours/> */}
+
+       {/* <Review/> */}
+
+       
+
+       {/* <Review/> */}
+
+       <Form1/>
+       
 
        
 

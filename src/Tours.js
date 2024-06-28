@@ -62,7 +62,8 @@ function Tours() {
  
 
   return (
-    <div>
+    <div> 
+        <div className="main">
     <div className="container mt-5">
       <div >
         <h2 className=" text-center">Our Tours</h2>
@@ -98,7 +99,7 @@ function Tours() {
 
 
 
-
+    </div>
     </div>
   );
 }
