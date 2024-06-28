@@ -52,3 +52,14 @@
   margin-left: -3px;
   top: 120px;
     }
+
+    .forgot
+    {
+        
+        text-align:end;
+       
+        margin-left: 350px;
+    }
+    .remember {
+        text-align: center;
+    }

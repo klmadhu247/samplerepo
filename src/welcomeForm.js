@@ -19,11 +19,15 @@ class WelcomeForm extends Component{
 
                         <div className="form-group col-sm-6 d-flex flex-column">
                             <input type="password" className="form-control " placeholder="Password"/>
+                           
                         </div>
+                        <a className="forgot" href="#"> i forgot password</a>
 
                         <div>
                             <button className="button">Signin</button>
                         </div>
+                       <div className="remember"> <input type="radio"/>
+                        <label>Remember</label> </div>
 
                         
 
@@ -43,7 +47,7 @@ class WelcomeForm extends Component{
                         </div>
 
                         <div>
-                            <button className="button">Create Account</button>
+                            <button className="button mt-5">Create Account</button>
                         </div>
 
                         
