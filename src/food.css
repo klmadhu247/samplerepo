@@ -2,7 +2,7 @@
 
 .min{
     background: white;
-    background-color: white;
+    
     
     
 
@@ -78,10 +78,18 @@ img{
         justify-content: space-between;
         padding: 10px;
     }
+
+    .item-info
+{
+    margin-left: -15px;
+}
+
+    
 .item-info header
 {
     display: flex;
     justify-content: space-between;
+    border-bottom: dotted black 1px ;
 }
 
 .item-info h4
