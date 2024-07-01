@@ -6,6 +6,7 @@ import Form1 from './Form1'
 import Register from './Register'
 import Menu from './FoodMenu'
  import WelcomeForm from './welcomeForm'
+ import Accordion from './Accordion'
 
 
 
@@ -20,48 +21,12 @@ class App extends Component{
     return(
       
       <div>
-        {/* <Frm/> */}
-
-      
-       {/*<Frm/>  <Travel/>  */}
-
-       {/* <Travel/> */}
-       
-       {/* <Tours/> */}
-
-       {/* <Review/> */}
-
-       
-
-       {/* <Review/> */}
-
-       
+        
       
        
-
-       
-       {/* <Form1/>
-       <Register/>
-
-       <Tours/> */}
-       
-
-       
-       {/* <Review/> */}
-
-       {/* <WelcomeForm/> */}
-
        {/* <Menu/> */}
+       <Accordion/>
        
-       
-       {/* <WelcomeForm/> */}
-
-       <Menu/>
-       
-
-       
-
-
 
        
       </div>
