@@ -4,6 +4,8 @@ import Review from './Review'
 import Birthday from './Birthday'
 import Form1 from './Form1'
 import Register from './Register'
+import Menu from './FoodMenu'
+ import WelcomeForm from './welcomeForm'
 
 
 
@@ -34,22 +36,27 @@ class App extends Component{
        {/* <Review/> */}
 
        
-
+      
        
 
-       {/* <Register/> */}
-       {/* <Form1/> */}
-
-       {/* <Tours/> */}
-
-       <Form1/>
+       
+       {/* <Form1/>
        <Register/>
 
-       <Tours/>
-       
-       
+       <Tours/> */}
        
 
+       
+       {/* <Review/> */}
+
+       {/* <WelcomeForm/> */}
+
+       {/* <Menu/> */}
+       
+       
+       {/* <WelcomeForm/> */}
+
+       <Menu/>
        
 
        

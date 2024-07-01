@@ -45,8 +45,8 @@ function Review () {
         <div className='container'>
             <div className='card row  '>
             <h2> {reviews.length} Birthdays today</h2>
-            <div className='card-body row'>
-            {reviews.map(review=><div className=' row '><div className='d-flex justify-content:center align-items-center' ><img className="image  " src={review.image} width='50px'></img> 
+            <div className='card-bodyy row'>
+            {reviews.map(review=><div className=' row '><div className='d-flex justify-content:center align-items-center' ><img className="image  " src={review.image} ></img> 
             <div className='col-12 ms-4 '>
                   <h5 className="mb-1">{review.name}</h5>
                   <p className="mb-0">{review.age} years</p>
