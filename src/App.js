@@ -7,6 +7,7 @@ import Register from './Register'
 import Menu from './FoodMenu'
  import WelcomeForm from './welcomeForm'
  import Accordion from './Accordion'
+import Accordion_2 from './Accordion_2'
 
 
 
@@ -25,6 +26,11 @@ class App extends Component{
       
        
        {/* <Menu/> */}
+       {/* <Accordion/>
+       <Menu/> */}
+
+       <Accordion_2/>
+
        <Accordion/>
        
 

@@ -1,7 +1,9 @@
 import React, {useState} from "react";
-import './accord.css'
 
-function Accordion (){
+import Child_Accord from "./Child_Accord";
+
+function Accordion_2 ()
+{
 
     const [accordList,setAccordList]= useState([{
         id: 1,
@@ -36,34 +38,18 @@ function Accordion (){
 
     )
 
-    const [click,setClick] = useState(false)
+    
 
-    const handleClick = (id)=>
-        {
-            setClick(!click)
-            
-
-            
-        }
+    
 
 
     return(
-       <body className="body_main"> 
-       <main className="Acord_main" >
+       <div>
 
-        <div className="container_box ">
+        {accordList.map(al=>( <Child_Accord key={al.id} id={al.di} title={al.title} info={al.info}/>))}
 
-            <div className="login_text "><h3>Qestions And Answers About Login </h3> </div>
 
-           <article className="question_List">
-              {accordList.map(item=><div className="accord_List"> <h5>{item.title} </h5>  <button  className="symbol" onClick={()=>handleClick()}> {accordList.click? '-':'+'} </button> 
-             {click && <div><p>{item.info}</p></div>}</div> )}
-             </article>
-
-        </div>
-        </main>
-
-        </body>
+       </div>
     )
 }
-export default Accordion
+export default Accordion_2
