@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 
-import FetchAsynAwait from './FetchAsyncAwait'
+import FetchUsingAsyncAwait from './FetchUsingAsyncAwait'
 
 function App (){
   return(
     <div>
-    <FetchAsynAwait/>
+    <FetchUsingAsyncAwait/>
 
     </div>
   )
