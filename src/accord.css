@@ -1,57 +1,74 @@
-.body_main
+.main-box
 {
-    background: rgb(80, 8, 101);
-    
+    background-color: rgb(80, 8, 101);
+    height: 100%;
+    width: 100%;
 }
-.Acord_main
+.main_body{
+    
+    background: violet;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.Container_box
 {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 90%;
+    height:500px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 15px;
     background: white;
-    
-    width: 75%;
-    height: 75%;
-    margin: 100px 100px;
-    border-radius: 20px;
-}
-.container_box
-{
-    display: flex;
-    justify-content: center;
-    padding: 100px;
-}
-.symbol
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(244, 241, 241);
-    border-color: transparent;
-    
-    width: 2rem;
-    height: 2rem;
-    
-    border-radius: 50%;
-    color: red;
-    
-    cursor: pointer;
+    padding: 30px;
     
     
 }
-.login_text
+.Container_box h3
 {
-    margin-right: 50px;
+    width: 180px;
 
 }
-.accord_List
+
+.question_List
+{
+    
+    border: 3px rgb(169, 14, 14) ;
+    margin-top:   1px;
+    margin-left: -10px;
+   display: flex;
+   justify-content: space-between;
+  
+    padding: 3px;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.question header
 {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    padding: 1rem 1.5rem;
-    border: 1px solid grey;
-    margin: 4px;
+    align-items: center;
+
 }
-.question_List
+.question_List button
 {
-    padding: 1rem 1.5rem;
+    background: rgb(169, 163, 163) ;
+    border-radius: 50%;
+    color: red;
+    width: 2rem;
+    height:2rem
+
+}
+
+.question_List p{
+    margin-bottom: 1.25rem;
     
 }

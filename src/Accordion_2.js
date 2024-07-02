@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 
 import Child_Accord from "./Child_Accord";
+import './accord.css'
 
 function Accordion_2 ()
 {
@@ -44,11 +45,18 @@ function Accordion_2 ()
 
 
     return(
-       <div>
+      <div className="main_body">
+       <main className="main_box">
+        <div className="Container_box">
+        <div className="login_text "><h3>Qestions And Answers About Login </h3> </div>
+        
 
-        {accordList.map(al=>( <Child_Accord key={al.id} id={al.di} title={al.title} info={al.info}/>))}
+       <div> {accordList.map(al=>( <Child_Accord key={al.id} id={al.di} title={al.title} info={al.info}/>))}</div>
+
+       </div>
 
 
+       </main>
        </div>
     )
 }

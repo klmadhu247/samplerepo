@@ -31,9 +31,9 @@ class App extends Component{
 
        <Accordion_2/>
 
-       <Accordion/>
+       {/* <Accordion/> */}
        
-
+       <Menu/>
        
       </div>
     )
