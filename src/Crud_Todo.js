@@ -29,6 +29,8 @@ const handleChange =(e)=>
                 setReserveData(reserveData.filter(rd=>rd.id!==id))
             }
 
+            //Updated using id 
+
             const handleUpdate =(id)=>
                 {
                    const newTask = prompt('UPdate your task ')
