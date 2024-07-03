@@ -21,7 +21,7 @@ function Todo (){
                 },
                 {
                     id:4 ,Task:'TO Select Students for project'
-                    },
+                    }
 ])
 
 const [reserveTodo,setReserveTodo] = useState([
