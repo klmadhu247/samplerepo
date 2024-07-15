@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
-
-import Todo from './Todo'
-import Crud_Todo from './Crud_Todo'
+import Todo from './todo_API'
+import CheckJson from './Check_Json'
+import JsonTest from './jsonserver'
 
 
 function App (){
   return(
     <div>
-    {/* <Todo/> */}
 
-    <Crud_Todo/>
+{/* <Todo/> */}
+    <CheckJson/> 
 
+
+    {/* <JsonTest/> */}
     </div>
   )
 }
