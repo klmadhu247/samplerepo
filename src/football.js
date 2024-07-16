@@ -32,7 +32,7 @@ function Football (props)
         
     }
 
-    return(
+    return(   
         <div>
 Football
 <button onClick={handleClick}> Go to Cricket</button>
