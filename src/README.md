@@ -1,2 +1,2 @@
-Explaining about routing and how to implement in react
-Explaining about the usage of exact, Route, Switch and Link in Routing
+Explaining the need for redux, issue of props drilling
+implementing a basic store with react application and explaining how each component can access state within store
