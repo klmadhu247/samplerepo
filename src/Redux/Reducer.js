@@ -1,5 +1,6 @@
 import { INCREMENT } from "./Constants"
 import { DECREMENT } from "./Constants"
+import { UPDATEFIRSTNAME } from "./Constants"
 
 const initialState = {
     FirstName: 'Advik',
@@ -19,6 +20,9 @@ const reducer = (state=initialState,action) =>
 
         case DECREMENT:
             return {...state,AGe:state.AGe-1}  
+
+        case UPDATEFIRSTNAME:
+            return {...state, FirstName:action.payload}
 
         default: 
         return state
