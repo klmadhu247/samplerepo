@@ -13,7 +13,7 @@ const handleChange = (e)=>
     setNewName(e.target.value)
 }
 
-const handleUpdate =()=>
+const handleUpdate =()=>d
 {
     updateName(newName)
     setNewName('')
