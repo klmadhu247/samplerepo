@@ -1,6 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import reducer from './Redux/Reducer'
+import Personal_Details from './Redux/Personal_Details'
 
-import NextPrev from './NextPrev'
+
+const store = createStore(reducer)
+
 
 function App (){
 
@@ -8,7 +14,13 @@ function App (){
 
   return(
     <div>
-   <NextPrev/>
+
+      <Provider store={store}>
+
+     <Personal_Details/>
+
+      </Provider>
+  
 
     </div>
   )
