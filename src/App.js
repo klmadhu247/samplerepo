@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import store from './Redux/Store'// imported the required store
+import { Provider } from 'react-redux';// imported Provider which we use to wrap the app inside of it so that within this any element can access the store
+import Customer from './Customer'
+
 
 function App() {
   return (
+    <Provider store={store}> {/*store access is given to the provider by passing it*/}
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Redux </h2>
+
+      <Customer/>   {/*we can access store only if we mention the element inside Provider*/}
     </div>
+    </Provider>
   );
 }
 
