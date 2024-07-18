@@ -48,8 +48,8 @@ const handleUpdate = ()=>
             
             <div style={{display:'flex', justifyContent:'center',marginTop:'20px',padding:'10px'}}>
             <input type="text" value={newFirstName} onChange={handleChange}  placeholder="Edit FirstName" />
-            
-            <button onClick={handleUpdate} >Update FirstName</button>
+
+            <button onClick={handleUpdate} >Update FirstName</button>   
 
             </div>
 
