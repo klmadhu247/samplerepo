@@ -1,20 +1,34 @@
-
+import { BrowserRouter as Router,Link,Routes,Route } from 'react-router-dom';
 
 import './App.css';
-import store from './Redux/Store'// imported the required store
-import { Provider } from 'react-redux';// imported Provider which we use to wrap the app inside of it so that within this any element can access the store
-import Customer from './Customer'
-
+import Home from './Home';
+import About from './about';
+import Contact from './contact';
 
 function App() {
   return (
-    <Provider store={store}> {/*store access is given to the provider by passing it*/}
-    <div className="App">
-      <h2>Redux </h2>
+    <Router>
+    <div>
 
-      <Customer/>   {/*we can access store only if we mention the element inside Provider*/}
+      
+     <ul>
+      <li><Link to='/'>HOme</Link></li>
+      <li><Link to='/about'>About us</Link></li>
+      <li><Link to='/contact'>Contct us</Link></li>
+     </ul>
+
+
+     <Routes>
+      <Route path='/' Component={Home}/>
+      <Route path='/about' Component={About}/>
+      <Route path='/contact' Component={Contact}/>
+     </Routes>
+
+      
+
+     
     </div>
-    </Provider>
+    </Router>
   );
 }
 
