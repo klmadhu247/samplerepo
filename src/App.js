@@ -1,11 +1,10 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import reducer from './Redux/Reducer'
+import store from './Store'
 import Personal_Details from './Redux/Personal_Details'
 
 
-const store = createStore(reducer)
+
 
 
 function App (){

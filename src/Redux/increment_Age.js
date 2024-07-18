@@ -1,9 +1,9 @@
-
+import { INCREMENT } from "./Constants"
 
 const increment = ()=>
 {
     return{
-        type:'INCREMENT_AGE'
+        type:INCREMENT
     }
 }
 export default increment

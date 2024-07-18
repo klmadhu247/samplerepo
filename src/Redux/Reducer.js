@@ -1,5 +1,5 @@
-
-
+import { INCREMENT } from "./Constants"
+import { DECREMENT } from "./Constants"
 
 const initialState = {
     FirstName: 'Advik',
@@ -14,9 +14,14 @@ const reducer = (state=initialState,action) =>
 {
     switch(action.type)
     {
-        case 'INCREMENT_AGE':
+        case INCREMENT:
             return {...state, AGe:state.AGe+1}
-        default: return state
+
+        case DECREMENT:
+            return {...state,AGe:state.AGe-1}  
+
+        default: 
+        return state
     }
 }
 

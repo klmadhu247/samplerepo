@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import increment from "./increment_Age";
+import decrement from "./decrement_Age";
 
 
 
-function Personal_Details ({Fn,Ln,Age,Gender,Add,Email,increment})
+function Personal_Details ({Fn,Ln,Age,Gender,Add,Email,increment,decrement})
 {
     return(
         <div>
@@ -20,6 +21,9 @@ function Personal_Details ({Fn,Ln,Age,Gender,Add,Email,increment})
            <button onClick={increment} >Increment_Age</button>
             </div>
 
+            <div style={{display:'flex',justifyContent:'center',marginTop:'20px'}}>
+           <button onClick={decrement} >Decrement_Age</button>
+            </div>
         </div>
     )
 }
@@ -39,7 +43,8 @@ const mapStateToProps = (state)=>
 const mapDispatchToProps = (dispatch)=>
 {
     return{
-        increment:()=> dispatch(increment())
+        increment:()=> dispatch(increment()),
+        decrement:()=> dispatch(decrement())
     }
 }
 export default connect (mapStateToProps,mapDispatchToProps) (Personal_Details)
