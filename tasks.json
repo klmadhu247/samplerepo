@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "task": "To Learn React"
+    },
+    {
+      "id": "2",
+      "task": "To Learn JS"
+    },
+    {
+      "id": "3",
+      "task": "To Teach React"
+    },
+    {
+      "id": "24a9",
+      "task": "To become Pro in React"
+    }
+  ]
+}
